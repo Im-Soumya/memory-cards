@@ -10,15 +10,26 @@
   <title>Memory Cards</title>
 </head>
 <body>
-  <button id='clear' class="clear btn">
-    <i class="fas fa-trash"></i> Clear All
-  </button>
+  <button id='clear' class="clear btn">Clear All</button>
 
   <h1>Memory Cards
-    <button id="show" class="btn btn-small"><i class="fas fa-plus"></i>Add a card</button>
+    <button id="show" class="btn btn-small">Add a card</button>
   </h1>
 
-  <div id="cards-container" class="cards"></div>
+  <div id="cards-container" class="cards">
+    <!-- <div class="inner-card">
+      <div class="inner-card-front">
+        <p>
+          ${data.question}
+        </p>
+      </div>
+      <div class="inner-card-back">
+        <p>
+          ${data.answer}
+        </p>
+      </div>
+    </div> -->
+  </div>
 
   <div class="navigation">
     <button id='prev' class="nav-button"><i class="fas fa-arrow-left"></i></button>
@@ -45,7 +56,7 @@
       <textarea id="answer" placeholder="Enter a answer"></textarea>
     </div>
 
-    <button id="add-card" class="btn"><i class="fas fa-plus"></i>Add Card</button>
+    <button id="add-card" class="btn add-btn">Add Card</button>
   </div>
 
   <script src='index.js'></script>
